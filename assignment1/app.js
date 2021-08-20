@@ -13,7 +13,7 @@
     $scope.calcCalories = function() {
       var itemsCount = countItems($scope.menu);
 
-      if (itemsCount > 0 && itemsCount <= 3)
+      if (itemsCount > 0 && itemsCount < 4)
       {
         $scope.msg = "Enjoy!";
       }
@@ -26,8 +26,9 @@
 
     function countItems(string) {
       console.log("Passed string: " + string)
-      var words = string.split(',') - 1;
-      console.log(words.length)
+      var words = string.split(',');
+      console.log("Parsed: " + words);
+      console.log(words.length);
       return words.length;
     }
   }
