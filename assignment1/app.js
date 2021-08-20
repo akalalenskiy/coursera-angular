@@ -13,7 +13,7 @@
     $scope.calcCalories = function() {
       var itemsCount = countItems($scope.menu);
 
-      if (itemsCount > 0 && itemsCount < 3)
+      if (itemsCount > 0 && itemsCount <= 3)
       {
         $scope.msg = "Enjoy!";
       }
