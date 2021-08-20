@@ -26,7 +26,7 @@
 
     function countItems(string) {
       console.log("Passed string: " + string)
-      var words = string.split(',');
+      var words = string.split(',') - 1;
       console.log(words.length)
       return words.length;
     }
